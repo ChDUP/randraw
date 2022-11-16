@@ -1,0 +1,8 @@
+ed7551,172.18.0.1,GET,http://localhost:8888/,1668618083,,404
+c08390,172.18.0.1,GET,http://localhost:8888/favicon.ico,1668618084,111806,404
+111806,172.18.0.1,GET,http://localhost:8888/favicon.ico,1668618084,,404
+3a77d6,172.18.0.1,GET,http://localhost:8888/,1668618251,,404
+2c1ade,172.18.0.1,GET,http://localhost:8888/home,1668618340,,200
+db3a92,172.18.0.1,GET,http://localhost:8888/home,1668618381,8c1699,404
+8c1699,172.18.0.1,GET,http://localhost:8888/home,1668618381,,404
+8cb905,172.18.0.1,GET,http://localhost:8888/,1668618386,,200
