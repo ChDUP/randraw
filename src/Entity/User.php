@@ -28,6 +28,10 @@ class User
     #[ORM\Column(type: 'date')]
     private $last_visit;
 
+    #[ORM\ManyToOne(targetEntity: Figure::class, inversedBy: 'users')]
+    #[ORM\JoinColumn(nullable: false)]
+    private $figure;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -89,6 +93,18 @@ class User
     public function setLastVisit(\DateTimeInterface $last_visit): self
     {
         $this->last_visit = $last_visit;
+
+        return $this;
+    }
+
+    public function getFigure(): ?Figure
+    {
+        return $this->figure;
+    }
+
+    public function setFigure(?Figure $figure): self
+    {
+        $this->figure = $figure;
 
         return $this;
     }
