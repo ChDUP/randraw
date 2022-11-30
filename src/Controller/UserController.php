@@ -26,7 +26,6 @@ class UserController extends AbstractController
                 'credential' => $credential
                 ], [])) {
 
-                dd($user->getAssigned());
                 if ($user->getAssigned() == true) {
                     return $this->render('figure/selected.html.twig', [
                             'user' => $user,
