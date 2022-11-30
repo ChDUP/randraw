@@ -1,14 +1,46 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}DelCulPapMar !{% endblock %}
+
+{% block javascripts %}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+        <h1 class="text-3xl font-bold mb-10">
+            Bienvenue!
+        </h1>
+        {{ form_start(credential_form) }}
+            <div class="form-group mb-6">
+                {{ form_widget(credential_form) }}
 
-<div class="example-wrapper">
-    <h1>Hello cher utilisateur ✅</h1>
-</div>
+                {% if error == true %}
+                    <small id="credentialHelp" class="block mt-1 text-xs text-red-600/75">Erreur de code</small>
+                {% else %}
+                    <small id="credentialHelp" class="block mt-1 text-xs text-gray-600">Code communiqué par Laurent.</small>
+                {% endif %}
+            </div>
+            <button type="submit" class="
+      px-6
+      py-2.5
+      bg-blue-600
+      text-white
+      font-medium
+      text-xs
+      leading-tight
+      uppercase
+      rounded
+      shadow-md
+      hover:bg-blue-700 hover:shadow-lg
+      focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+      active:bg-blue-800 active:shadow-lg
+      transition
+      duration-150
+      ease-in-out">Envoyer</button>
+        {{ form_end(credential_form) }}
+    </div>
 {% endblock %}
