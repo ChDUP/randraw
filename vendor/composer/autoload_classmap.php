@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Command\\KeyGenerateCommand' => $baseDir . '/src/Command/KeyGenerateCommand.php',
+    'App\\Controller\\HomeController' => $baseDir . '/src/Controller/HomeController.php',
     'App\\Kernel' => $baseDir . '/src/Kernel.php',
     'Collator' => $vendorDir . '/symfony/polyfill-intl-icu/Resources/stubs/Collator.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
@@ -4670,6 +4671,10 @@ return array(
     'Symfony\\WebpackEncoreBundle\\CacheWarmer\\EntrypointCacheWarmer' => $vendorDir . '/symfony/webpack-encore-bundle/src/CacheWarmer/EntrypointCacheWarmer.php',
     'Symfony\\WebpackEncoreBundle\\DependencyInjection\\Configuration' => $vendorDir . '/symfony/webpack-encore-bundle/src/DependencyInjection/Configuration.php',
     'Symfony\\WebpackEncoreBundle\\DependencyInjection\\WebpackEncoreExtension' => $vendorDir . '/symfony/webpack-encore-bundle/src/DependencyInjection/WebpackEncoreExtension.php',
+    'Symfony\\WebpackEncoreBundle\\Dto\\AbstractStimulusDto' => $vendorDir . '/symfony/webpack-encore-bundle/src/Dto/AbstractStimulusDto.php',
+    'Symfony\\WebpackEncoreBundle\\Dto\\StimulusActionsDto' => $vendorDir . '/symfony/webpack-encore-bundle/src/Dto/StimulusActionsDto.php',
+    'Symfony\\WebpackEncoreBundle\\Dto\\StimulusControllersDto' => $vendorDir . '/symfony/webpack-encore-bundle/src/Dto/StimulusControllersDto.php',
+    'Symfony\\WebpackEncoreBundle\\Dto\\StimulusTargetsDto' => $vendorDir . '/symfony/webpack-encore-bundle/src/Dto/StimulusTargetsDto.php',
     'Symfony\\WebpackEncoreBundle\\EventListener\\ExceptionListener' => $vendorDir . '/symfony/webpack-encore-bundle/src/EventListener/ExceptionListener.php',
     'Symfony\\WebpackEncoreBundle\\EventListener\\PreLoadAssetsEventListener' => $vendorDir . '/symfony/webpack-encore-bundle/src/EventListener/PreLoadAssetsEventListener.php',
     'Symfony\\WebpackEncoreBundle\\EventListener\\ResetAssetsEventListener' => $vendorDir . '/symfony/webpack-encore-bundle/src/EventListener/ResetAssetsEventListener.php',

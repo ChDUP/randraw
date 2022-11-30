@@ -163,8 +163,8 @@ class ComposerStaticInit8475524b1358f3665693f13dca634c10
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -536,9 +536,9 @@ class ComposerStaticInit8475524b1358f3665693f13dca634c10
         ),
         'Doctrine\\Common\\' => 
         array (
-            0 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
-            1 => __DIR__ . '/..' . '/doctrine/persistence/src/Common',
-            2 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+            1 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
+            2 => __DIR__ . '/..' . '/doctrine/persistence/src/Common',
         ),
         'Doctrine\\Bundle\\MigrationsBundle\\' => 
         array (
@@ -560,6 +560,7 @@ class ComposerStaticInit8475524b1358f3665693f13dca634c10
 
     public static $classMap = array (
         'App\\Command\\KeyGenerateCommand' => __DIR__ . '/../..' . '/src/Command/KeyGenerateCommand.php',
+        'App\\Controller\\HomeController' => __DIR__ . '/../..' . '/src/Controller/HomeController.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
         'Collator' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/Resources/stubs/Collator.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
@@ -5223,6 +5224,10 @@ class ComposerStaticInit8475524b1358f3665693f13dca634c10
         'Symfony\\WebpackEncoreBundle\\CacheWarmer\\EntrypointCacheWarmer' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/CacheWarmer/EntrypointCacheWarmer.php',
         'Symfony\\WebpackEncoreBundle\\DependencyInjection\\Configuration' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/DependencyInjection/Configuration.php',
         'Symfony\\WebpackEncoreBundle\\DependencyInjection\\WebpackEncoreExtension' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/DependencyInjection/WebpackEncoreExtension.php',
+        'Symfony\\WebpackEncoreBundle\\Dto\\AbstractStimulusDto' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/Dto/AbstractStimulusDto.php',
+        'Symfony\\WebpackEncoreBundle\\Dto\\StimulusActionsDto' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/Dto/StimulusActionsDto.php',
+        'Symfony\\WebpackEncoreBundle\\Dto\\StimulusControllersDto' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/Dto/StimulusControllersDto.php',
+        'Symfony\\WebpackEncoreBundle\\Dto\\StimulusTargetsDto' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/Dto/StimulusTargetsDto.php',
         'Symfony\\WebpackEncoreBundle\\EventListener\\ExceptionListener' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/EventListener/ExceptionListener.php',
         'Symfony\\WebpackEncoreBundle\\EventListener\\PreLoadAssetsEventListener' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/EventListener/PreLoadAssetsEventListener.php',
         'Symfony\\WebpackEncoreBundle\\EventListener\\ResetAssetsEventListener' => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src/EventListener/ResetAssetsEventListener.php',

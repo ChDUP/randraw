@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '__root__',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => '03662bcd937c433b1c1c81b298608bd160dc75e1',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '271c669750ebedda802209ecb25758eb885edf85',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '03662bcd937c433b1c1c81b298608bd160dc75e1',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '271c669750ebedda802209ecb25758eb885edf85',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -340,8 +340,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache-implementation' => array(
@@ -1011,9 +1011,9 @@
             'dev_requirement' => false,
         ),
         'symfony/webpack-encore-bundle' => array(
-            'pretty_version' => 'v1.14.0',
-            'version' => '1.14.0.0',
-            'reference' => '1729c314574f32e49f9660a0cee870f7e603864f',
+            'pretty_version' => 'v1.16.0',
+            'version' => '1.16.0.0',
+            'reference' => 'bb399930c0299866258b616a74a27b50b94c5d45',
             'type' => 'symfony-bundle',
             'install_path' => __DIR__ . '/../symfony/webpack-encore-bundle',
             'aliases' => array(),
