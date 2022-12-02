@@ -4,14 +4,14 @@
     let figures = JSON.parse(shuffleElement.dataset.figures);
     let figure = shuffleElement.dataset.figure;
 
-    console.log(figures);
+    console.log(figures[3].name);
     let selected = '<button>Lance le tirage</button>';
 
     let counter = 0;
 
     let delay = 100;
 
-    const strings = ['Mario', 'Duke Nukem', 'Zelda'];
+    const strings = ['Koopa Troopa', 'Mario', 'Luigi', 'Toad', 'Peach', 'Yoshi', 'Bowser', 'Wario', 'Donkey Kong', 'Goomba', 'Kamek', 'Boo', 'Daisy', 'Waluigi', 'Rosalina', 'Diddy Kong', 'Koopa'];
 
     const startRand = () => {
         const interval = setInterval(() => {
@@ -21,7 +21,7 @@
                 delay = 50 - counter;
             } else {
                 clearInterval(interval)
-                selected = figure + ' !';
+                selected = strings[figure] + ' !';
             }
         } , delay)
 

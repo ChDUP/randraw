@@ -39,7 +39,7 @@ class UserController extends AbstractController
                         ]
                     );
                 } else {
-                    $user->setAssigned(true);
+//                    $user->setAssigned(true);
                     $user->setFirstVisit(new \DateTime());
                     $user->setLastVisit(new \DateTime());
 
