@@ -3,7 +3,9 @@
 namespace App\Controller;
 
 use App\Form\CredentialType;
+use App\Repository\FigureRepository;
 use App\Repository\UserRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -12,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class UserController extends AbstractController
 {
     #[Route('/', name: 'app_home')]
-    public function index(Request $request, UserRepository $userRepository): Response
+    public function index(Request $request, EntityManagerInterface $entityManager, UserRepository $userRepository, FigureRepository $figureRepository): Response
     {
         $error = false;
         $form = $this->createForm(CredentialType::class);
@@ -27,15 +29,26 @@ class UserController extends AbstractController
                 ], [])) {
 
                 if ($user->getAssigned() == true) {
+                    $user->setLastVisit(new \DateTime());
+                    $entityManager->persist($user);
+                    $entityManager->flush();
+
                     return $this->render('figure/selected.html.twig', [
                             'user' => $user,
                             'figure' => $user->getFigure()
                         ]
                     );
                 } else {
+                    $user->setAssigned(true);
+                    $user->setFirstVisit(new \DateTime());
+                    $user->setLastVisit(new \DateTime());
+
+                    $entityManager->persist($user);
+                    $entityManager->flush();
                     return $this->render('figure/shuffle.html.twig', [
                             'user' => $user,
-                            'figure' => $user->getFigure()
+                            'figure' => $user->getFigure(),
+                            'figures' => $figureRepository->findAll()
                         ]
                     );
                 }
